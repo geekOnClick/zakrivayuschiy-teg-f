@@ -425,6 +425,9 @@
 /* 375px */
 
 @media (width <= 700px) {
+    .article-image {
+        width: 100%;
+    }
     .header__title-tag {
         font-size: 49px;
     }
