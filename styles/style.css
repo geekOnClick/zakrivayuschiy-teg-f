@@ -70,7 +70,7 @@
 .theme-menu__list {
     display: flex;
     flex-direction: column;
-    row-gap: 7px;
+    row-gap: 14px;
     align-items: center;
 }
 
