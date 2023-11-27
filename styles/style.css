@@ -38,6 +38,9 @@
     padding-top: 136px;
     border: 2px solid var(--accent-color);
     background-color: var(--main-color);
+    max-width: min(100%, 700px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header__title-tag {
@@ -145,6 +148,7 @@
     align-items: center;
     gap: 54px;
     margin: 105px auto;
+    max-width: min(100%, 700px);
 }
 
 .article {
@@ -425,10 +429,6 @@
 /* 375px */
 
 @media (width <= 700px) {
-    .pages {
-        max-width: min(100%, 375px);
-    }
-
     .article-image {
         width: 100%;
     }
