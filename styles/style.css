@@ -426,7 +426,7 @@
 
 @media (width <= 700px) {
     .pages {
-        max-width: min(700px, 375px);
+        max-width: min(100%, 375px);
     }
 
     .article-image {
