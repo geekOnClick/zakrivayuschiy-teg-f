@@ -37,7 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 102px;
+    margin-top: 92px;
     padding-top: 136px;
     border: 2px solid var(--accent-color);
     background-color: var(--main-color);
@@ -76,7 +76,8 @@
 .theme-menu__list {
     display: flex;
     flex-direction: column;
-    row-gap: 14px;
+    row-gap: 10px;
+    margin-left: 6px;
 }
 
 .theme-menu__button {
@@ -205,8 +206,8 @@
 
 .article-label {
     position: absolute;
-    top: 23px;
-    right: 11px;
+    top: 30px;
+    right: 16px;
     font-family: var(--secondary);
     font-size: 14px;
     mix-blend-mode: hard-light;
@@ -306,6 +307,7 @@
     display: flex;
     justify-content: end;
     min-height: 49px;
+    margin-top: 5px;
 }
 
 .card__icon-button {
