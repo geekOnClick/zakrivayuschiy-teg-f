@@ -17,13 +17,16 @@
 .page {
     background-image: var(--backgroung);
     background-size: cover;
-
+    background-attachment: fixed;
     font-family: var(--main);
     font-variation-settings: 'wght' var(--main-text-weith);
     color: var(--accent-color);
 }
 
-path {
+.contour,
+.main__body,
+.core,
+.sparks {
     fill: var(--accent-color);
 }
 
@@ -105,6 +108,8 @@ path {
     content: '▶';
     position: absolute;
     animation: arrow 0.5s infinite alternate ease-in-out;
+    top: 0;
+    left: 0px;
 }
 
 .theme-menu__button::after {
@@ -226,31 +231,31 @@ path {
 
 /* Filters */
 
-.article-first .filter {
+.filter-first {
     filter: brightness(80%) invert(0.2);
 }
 
-.article-second .filter {
+.filter-second {
     filter: grayscale(90%);
 }
 
-.article-third .filter {
+.filter-third {
     filter: hue-rotate(20deg);
 }
 
-.article-fourth .filter {
+.filter-fourth {
     filter: invert(75%);
 }
 
-.article-fifth .filter {
+.filter-fifth {
     filter: drop-shadow(16px 16px 20px aqua);
 }
 
-.article-sixth .filter {
+.filter-sixth {
     filter: saturate(30%);
 }
 
-.article-seventh .filter {
+.filter-seventh {
     filter: brightness(80%);
 }
 
@@ -357,8 +362,12 @@ path {
     min-height: 38px;
 }
 
-.card__like-button:hover span,
-.card__save-button:hover span {
+/* в данном случае нет возможности избежать использования дополнительного селектора, так как требуемое поведение - 
+при наведении на кнопку изменять только цвет текста в span или svg внутри кнопки.
+Официальная документация допускает использование дополнительных селекторов
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators */
+.card__like-button:hover > .card__like-btn,
+.card__save-button:hover > .card__save-btn {
     color: var(--main-color);
 }
 
@@ -442,7 +451,7 @@ path {
     box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
-.dialog_button:hover span {
+.dialog_button:hover > .dialog-text {
     color: var(--main-color);
 }
 
@@ -465,7 +474,7 @@ path {
         row-gap: 8px;
     }
 
-    .card__save-button > svg {
+    .save-svg {
         width: 28px;
         height: 28px;
     }
