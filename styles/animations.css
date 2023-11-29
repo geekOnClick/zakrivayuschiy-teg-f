@@ -55,19 +55,6 @@
     }
 }
 
-/* .heart__icon:hover .main__body {
-    opacity: 1;
-    fill: var(--accent-color);
-    transition: opacity 0.3s ease, fill 0.3s ease;
-    transition-delay: 0.05s;
-}
-
-.heart__icon:hover .core {
-    opacity: 1;
-    fill: var(--accent-color);
-    transition: opacity 0.3s ease, fill 0.3s ease;
-} */
-
 .heart__icon:active .main__body,
 .like-icon.is-liked .main__body {
     opacity: 2;
